@@ -1,0 +1,6 @@
+# Secrets / local MCP config (contains API keys, must never be committed)
+.mcp.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

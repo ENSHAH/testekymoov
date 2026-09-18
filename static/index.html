@@ -3,33 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ekymoov - Transport adapté PMR et mobilité inclusive</title>
+    <title>Ekymoov - Transport adapté PMR pour passagers, chauffeurs et établissements</title>
     <meta
       name="description"
-      content="Ekymoov simplifie la réservation de trajets PMR avec des chauffeurs formés et des véhicules adaptés. Découvrez le service et demandez un accès."
+      content="Ekymoov connecte passagers à mobilité réduite, chauffeurs formés et établissements médico-sociaux autour d'un même trajet : besoins déclarés une fois, embarquement rémunéré, facturation mensuelle. Île-de-France."
     />
     <link rel="canonical" href="https://ekymoov.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ekymoov - Transport adapté PMR et mobilité inclusive" />
+    <meta property="og:title" content="Ekymoov - Transport adapté PMR pour passagers, chauffeurs et établissements" />
     <meta
       property="og:description"
-      content="Une expérience plus claire et rassurante pour réserver des trajets adaptés avec des chauffeurs formés."
+      content="Besoins d'accessibilité déclarés une seule fois, chauffeurs formés et rémunérés pour l'embarquement, établissements médico-sociaux facturés au mois."
     />
     <meta property="og:url" content="https://ekymoov.com/" />
-    <meta property="og:image" content="https://ekymoov.com/hero-ekymoov-pmr.jpg.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ekymoov - Transport adapté PMR et mobilité inclusive" />
-    <meta
-      name="twitter:description"
-      content="Réservez plus facilement un transport adapté avec des chauffeurs formés et des véhicules pensés pour les trajets PMR."
-    />
     <link rel="icon" type="image/png" sizes="32x32" href="ekymoov-logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="ekymoov-logo.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="ekymoov-logo.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#187f7c" />
-    <meta name="msapplication-TileColor" content="#187f7c" />
-    <meta name="msapplication-TileImage" content="ekymoov-logo.png" />
+    <meta name="theme-color" content="#fbf6ed" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -42,9 +36,8 @@
       <div class="page-content">
         <header class="topbar">
           <a class="brand" href="#hero" aria-label="Accueil Ekymoov">
-            <span class="brand-lockup">
-              <img class="brand-logo-image brand-logo-image-main" src="ekymoovlogolong.png" alt="Ekymoov" />
-            </span>
+            <img class="brand-logo-image" src="ekymoov-logo.png" alt="" />
+            <span class="brand-word">Ekymoov</span>
           </a>
 
           <button
@@ -60,288 +53,236 @@
           </button>
 
           <nav class="topnav" id="primary-navigation" aria-label="Navigation principale">
-            <a href="#problem">Constat</a>
-            <a href="#solution">Solution</a>
-            <a href="#how-it-works">Parcours</a>
+            <a href="passager.html">Passager</a>
+            <a href="chauffeur.html">Chauffeur</a>
+            <a href="etablissement.html">Établissement</a>
+            <a href="#showcase">L'application</a>
             <a href="#trust">Confiance</a>
-            <a href="#partners">Partenaires</a>
-            <a href="#contact">Contact</a>
           </nav>
 
-          <a class="button button-secondary topbar-cta" href="#cta">Demander un accès</a>
+          <a class="button button-primary topbar-cta" href="#cta">Demander un accès</a>
         </header>
 
         <main id="main-content">
-          <section class="hero section" id="hero">
+          <section class="hero" id="hero">
+            <div class="horizon-lines" aria-hidden="true">
+              <svg class="horizon-drift" viewBox="0 0 1200 320" preserveAspectRatio="none">
+                <path class="horizon-line horizon-line-1" d="M0,220 C150,180 300,240 450,210 C600,180 750,230 900,200 C1000,180 1100,210 1200,190" />
+                <path class="horizon-line horizon-line-2" d="M0,260 C180,230 320,280 500,250 C650,225 800,265 950,240 C1050,225 1130,250 1200,235" />
+              </svg>
+            </div>
+
             <div class="hero-copy reveal">
-              <span class="eyebrow">Transport adapté PMR</span>
-              <h1>Réservez plus facilement un trajet adapté avec des chauffeurs formés et des véhicules pensés pour la mobilité réduite.</h1>
+              <span class="eyebrow">Mobilité adaptée · Île-de-France</span>
+              <h1>La course à la demande, pensée pour les personnes <em>à mobilité réduite</em>.</h1>
               <p class="hero-text">
-                <span class="hero-text-desktop">
-                  Ekymoov simplifie la recherche, la réservation et le suivi de trajets PMR dans une expérience mobile plus claire,
-                  plus rassurante et plus fiable pour les personnes à mobilité réduite, leurs proches et les structures qui les accompagnent.
-                </span>
-                <span class="hero-text-mobile">
-                  Ekymoov simplifie la réservation de trajets PMR dans une expérience mobile plus claire et plus rassurante.
-                </span>
+                Le confort d'une application de VTC, avec ce qui manque partout ailleurs&nbsp;: besoins d'accessibilité
+                déclarés une fois pour toutes, chauffeurs formés, aidant prévenu en direct, temps d'embarquement offert
+                et prise en charge financière intégrée.
               </p>
+
+              <svg class="hero-route" viewBox="0 0 320 40" aria-hidden="true">
+                <path class="route-path route-line-draw" d="M4,30 C70,10 120,42 180,22 C220,8 260,18 316,10" />
+              </svg>
 
               <div class="hero-actions">
                 <a class="button button-primary" href="#cta">Demander un accès</a>
-                <a class="button button-ghost" href="#how-it-works">Voir comment ça fonctionne</a>
+                <a class="button button-ghost" href="#showcase">Découvrir l'application</a>
               </div>
 
-              <div class="hero-metrics" aria-label="Points forts Ekymoov">
-                <div class="metric-card">
-                  <strong>Pour les trajets PMR</strong>
-                  <span>Un service pensé pour des déplacements plus simples, plus lisibles et mieux anticipés.</span>
+              <div class="hero-facts">
+                <div class="hero-fact">
+                  <strong>1 seule fois</strong>
+                  <span>pour déclarer ses besoins d'accessibilité</span>
                 </div>
-                <div class="metric-card">
-                  <strong>Approche humaine</strong>
-                  <span>Des chauffeurs formés et une expérience conçue pour réduire l’incertitude avant le départ.</span>
+                <div class="hero-fact">
+                  <strong>3 interfaces</strong>
+                  <span>passager, chauffeur, établissement</span>
+                </div>
+                <div class="hero-fact">
+                  <strong>10 min</strong>
+                  <span>d'embarquement offertes au chauffeur</span>
                 </div>
               </div>
             </div>
 
-            <div class="hero-visual reveal" aria-hidden="true">
-              <div class="hero-visual-scene">
+            <div class="hero-visual reveal">
+              <div class="app-frame app-frame-float">
                 <img
-                  class="hero-image"
-                  src="hero-ekymoov-pmr.jpg.png"
-                  alt="Mobilité inclusive et application mobile"
+                  src="prototype/espace-client.png"
+                  alt="Écran d'accueil de l'application passager Ekymoov, avec la recherche de trajet et le prochain trajet à venir."
                   fetchpriority="high"
                   decoding="async"
                 />
-                <article class="hero-mockup-card">
-                  <div class="hero-mockup-head">
-                    <span class="mockup-live-chip">Trajet vérifié</span>
-                    <strong>18:30 - Gare Saint-Lazare vers Centre de soins</strong>
-                  </div>
-                  <p>Point de prise en charge confirmé, chauffeur formé PMR et véhicule adapté au départ.</p>
-                </article>
               </div>
             </div>
           </section>
 
-          <section class="section" id="problem">
-            <div class="problem-layout">
-              <div class="section-heading reveal">
-                <span class="eyebrow">Le constat</span>
-                <h2>Se déplacer ne devrait pas demander plus d’énergie, plus d’anticipation et plus de stress.</h2>
-                <p>
-                  <span class="mobile-text-desktop">
-                    Pour trop de personnes à mobilité réduite, trouver un transport adapté reste complexe, incertain et parfois impossible.
-                    Derrière chaque trajet manqué, il y a un rendez-vous reporté, une sortie annulée ou une autonomie réduite.
-                  </span>
-                  <span class="mobile-text-short">Trouver un transport adapté reste encore trop souvent complexe, incertain et limitant.</span>
-                </p>
-              </div>
-
-              <div class="media-card reveal">
-                <img
-                  id="problem-img"
-                  src="hero-ekymoov-pmr.jpg.png"
-                  alt="Scène de mobilité urbaine et d'accompagnement"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
+          <section class="section section-tight" id="problem">
+            <div class="section-heading center" style="margin-left: auto; margin-right: auto;">
+              <span class="eyebrow">Le constat</span>
             </div>
 
-            <div class="problem-grid">
-              <article class="problem-card reveal">
-                <strong>1 Français sur 6</strong>
-                <p>est concerné par une situation de handicap en France.</p>
-              </article>
-              <article class="problem-card reveal">
-                <strong>Des trajets incertains</strong>
-                <p>quand l’offre adaptée est difficile à trouver ou indisponible au bon moment.</p>
-              </article>
-              <article class="problem-card reveal">
-                <strong>Une autonomie freinée</strong>
-                <p>pour aller à un rendez-vous, travailler, étudier ou simplement sortir.</p>
-              </article>
+            <p class="pull-quote-lead reveal">
+              Se déplacer ne devrait pas demander plus d'énergie, plus d'anticipation et plus de stress.
+            </p>
+
+            <div class="stat-editorial-grid">
+              <div class="stat-editorial reveal">
+                <strong>1 sur 6</strong>
+                <p>personnes est concernée par une situation de handicap en France.</p>
+              </div>
+              <div class="stat-editorial reveal">
+                <strong>Incertains</strong>
+                <p>les trajets adaptés restent difficiles à trouver ou indisponibles au bon moment.</p>
+              </div>
+              <div class="stat-editorial reveal">
+                <strong>Freinée</strong>
+                <p>l'autonomie pour aller à un rendez-vous, travailler, étudier ou simplement sortir.</p>
+              </div>
             </div>
           </section>
 
           <section class="section" id="solution">
-            <div class="solution-layout">
-              <div class="section-heading reveal">
-                <span class="eyebrow">La solution</span>
-                <h2>Une seule expérience pour réserver, vérifier la disponibilité et organiser un trajet adapté plus sereinement.</h2>
-                <p>
-                  <span class="mobile-text-desktop">
-                    Ekymoov rassemble la demande de trajet, la vérification de disponibilité et une expérience de réservation plus claire,
-                    pour permettre aux utilisateurs d’anticiper plus facilement leur déplacement.
-                  </span>
-                  <span class="mobile-text-short">Une seule app pour réserver, vérifier la disponibilité et voyager plus sereinement.</span>
+            <div class="section-heading center" style="margin-left: auto; margin-right: auto;">
+              <span class="eyebrow">Ekymoov</span>
+              <h2>Une seule plateforme, deux univers qui se répondent.</h2>
+              <p>Le passager réserve un trajet dont les besoins sont déjà connus. Le chauffeur voit les contraintes et sa rémunération avant d'accepter.</p>
+            </div>
+
+            <div class="split-universes reveal">
+              <div class="universe-panel">
+                <span class="eyebrow">Interface 1 · Personne transportée</span>
+                <h3>L'application passager</h3>
+                <p>Besoins d'accessibilité déclarés une seule fois, véhicule réellement compatible, chauffeur connu avant le départ.</p>
+                <a class="button button-secondary" href="passager.html">Découvrir l'espace passager</a>
+                <div class="app-frame">
+                  <img src="prototype/espace-client.png" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+
+              <div class="universe-panel on-dark">
+                <span class="eyebrow">Interface 2 · Chauffeur TPMR</span>
+                <h3>L'espace chauffeur</h3>
+                <p>Contraintes du trajet et rémunération de l'embarquement visibles avant d'accepter une course.</p>
+                <a class="button button-secondary" href="chauffeur.html">Découvrir l'espace chauffeur</a>
+                <div class="app-frame">
+                  <img src="prototype/espace-chauffeur.png" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" id="showcase">
+            <div class="section-heading center" style="margin-left: auto; margin-right: auto;">
+              <span class="eyebrow">L'application</span>
+              <h2>Trois interfaces, un même trajet.</h2>
+              <p>Passager, chauffeur, établissement&nbsp;: chacun voit exactement ce dont il a besoin, au bon moment.</p>
+            </div>
+
+            <div class="app-showcase">
+              <article class="showcase-card reveal">
+                <div class="app-frame">
+                  <img
+                    src="prototype/espace-client.png"
+                    alt="Écran d'accueil de l'application passager Ekymoov."
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <h3>Passager</h3>
+                <p>Réserver pour soi ou pour un proche, en un coup d'œil.</p>
+              </article>
+              <article class="showcase-card reveal">
+                <div class="app-frame">
+                  <img
+                    src="prototype/espace-chauffeur.png"
+                    alt="Tableau de bord chauffeur Ekymoov avec la prochaine course réservée."
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <h3>Chauffeur</h3>
+                <p>Les besoins du passager, visibles avant d'accepter.</p>
+              </article>
+              <article class="showcase-card reveal">
+                <div class="app-frame">
+                  <img
+                    src="prototype/espace-etablissement.png"
+                    alt="Tableau de bord établissement Ekymoov pour l'EHPAD Les Tilleuls."
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <h3>Établissement</h3>
+                <p>La journée entière, suivie sans appeler personne.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="trust">
+            <div class="confidence-layout">
+              <div class="reveal">
+                <span class="eyebrow">Pourquoi nous faire confiance</span>
+                <p class="confidence-statement">Rien n'est découvert le jour du trajet&nbsp;: ce que montre l'application, pas ce qu'on promet.</p>
+              </div>
+
+              <div class="confidence-list reveal">
+                <div class="confidence-item">
+                  <span class="confidence-index">01</span>
+                  <div>
+                    <strong>Contraintes connues avant le trajet</strong>
+                    <p>Le chauffeur voit le type de fauteuil, l'équipement requis et l'étage avant d'accepter la course.</p>
+                  </div>
+                </div>
+                <div class="confidence-item">
+                  <span class="confidence-index">02</span>
+                  <div>
+                    <strong>Embarquement rémunéré, pas subi</strong>
+                    <p>Le temps d'installation du passager est estimé et payé au chauffeur, pas seulement le trajet.</p>
+                  </div>
+                </div>
+                <div class="confidence-item">
+                  <span class="confidence-index">03</span>
+                  <div>
+                    <strong>Facturation claire pour les établissements</strong>
+                    <p>Chaque trajet est horodaté ; un relevé mensuel unique sert de base à la facturation, par virement à trente jours.</p>
+                  </div>
+                </div>
+
+                <p class="confidence-aside">
+                  Vous représentez un EHPAD, un ESAT ou une association&nbsp;?
+                  <a href="etablissement.html">Découvrir l'espace établissement →</a>
                 </p>
               </div>
-
-              <div class="media-card reveal media-card-tall">
-                <img
-                  id="solution-img"
-                  src="human-assistance-driver.jpg.png"
-                  alt="Utilisation d'une application mobile dans un contexte urbain"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
-
-            <div class="feature-grid">
-              <article class="feature-card reveal">
-                <div class="feature-topline">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M7 3V6M17 3V6M4 9H20M6 5H18C19.1 5 20 5.9 20 7V18C20 19.1 19.1 20 18 20H6C4.9 20 4 19.1 4 18V7C4 5.9 4.9 5 6 5Z"/><path d="M9 13H15M9 17H13"/></svg>
-                  </div>
-                  <span class="feature-index">01</span>
-                </div>
-                <h3>Réservation simple</h3>
-                <p>Recherchez et réservez un trajet adapté depuis l’application mobile en quelques gestes.</p>
-              </article>
-              <article class="feature-card reveal">
-                <div class="feature-topline">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M12 12C14.2 12 16 10.2 16 8C16 5.8 14.2 4 12 4C9.8 4 8 5.8 8 8C8 10.2 9.8 12 12 12Z"/><path d="M5 20C5.8 16.9 8.5 15 12 15C15.5 15 18.2 16.9 19 20"/><path d="M17 13L19 15L22 12"/></svg>
-                  </div>
-                  <span class="feature-index">02</span>
-                </div>
-                <h3>Chauffeurs formés</h3>
-                <p>Ekymoov connecte les utilisateurs avec des chauffeurs sensibilisés aux besoins PMR.</p>
-              </article>
-              <article class="feature-card reveal">
-                <div class="feature-topline">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M5 16L6.4 11.5C6.7 10.6 7.5 10 8.4 10H15.6C16.5 10 17.3 10.6 17.6 11.5L19 16"/><path d="M4 16H20V18C20 18.6 19.6 19 19 19H18C17.4 19 17 18.6 17 18V17H7V18C7 18.6 6.6 19 6 19H5C4.4 19 4 18.6 4 18V16Z"/><path d="M7 13H17"/><circle cx="7.5" cy="16.5" r="1"/><circle cx="16.5" cy="16.5" r="1"/></svg>
-                  </div>
-                  <span class="feature-index">03</span>
-                </div>
-                <h3>Véhicules adaptés</h3>
-                <p>Une offre pensée pour accueillir la mobilité réduite dans de meilleures conditions de confort.</p>
-              </article>
-              <article class="feature-card reveal">
-                <div class="feature-topline">
-                  <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M5 12H6.5C8.6 12 10.5 13.9 10.5 16V18"/><path d="M19 12H17.5C15.4 12 13.5 13.9 13.5 16V18"/><path d="M12 20V16"/><path d="M12 4C14.761 4 17 6.239 17 9C17 11.761 14.761 14 12 14C9.239 14 7 11.761 7 9C7 6.239 9.239 4 12 4Z"/></svg>
-                  </div>
-                  <span class="feature-index">04</span>
-                </div>
-                <h3>Disponibilité plus lisible</h3>
-                <p>Consultez plus facilement les créneaux disponibles avant le départ pour mieux anticiper.</p>
-              </article>
             </div>
           </section>
 
-          <section class="section how-section" id="how-it-works">
-            <div class="section-heading reveal">
-              <span class="eyebrow">Comment ça marche</span>
-              <h2>Un parcours simple, lisible et conçu pour réduire les frictions avant le trajet.</h2>
-              <p>
-                <span class="mobile-text-desktop">
-                  Ekymoov a été pensée comme une vraie application de service: progressive, claire et orientée vers l’action,
-                  pour permettre un déplacement plus serein dès la réservation.
-                </span>
-                <span class="mobile-text-short">Une expérience mobile simple, lisible et pensée pour un déplacement serein.</span>
-              </p>
-            </div>
-
-            <div class="steps-grid">
-              <article class="step-card reveal">
-                <span class="step-number">01</span>
-                <h3>Téléchargez l’application</h3>
-                <p>Accédez à une interface mobile claire, lisible et rassurante.</p>
-              </article>
-              <article class="step-card reveal">
-                <span class="step-number">02</span>
-                <h3>Créez votre profil</h3>
-                <p>Renseignez vos besoins pour recevoir une expérience plus adaptée à votre mobilité.</p>
-              </article>
-              <article class="step-card reveal">
-                <span class="step-number">03</span>
-                <h3>Réservez votre trajet</h3>
-                <p>Choisissez un horaire, vérifiez la disponibilité et confirmez votre demande.</p>
-              </article>
-              <article class="step-card reveal">
-                <span class="step-number">04</span>
-                <h3>Voyagez plus sereinement</h3>
-                <p>Un chauffeur formé et un véhicule adapté facilitent l’organisation du trajet.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="section trust-section" id="trust">
-            <div class="section-heading reveal">
-              <span class="eyebrow">Pourquoi nous faire confiance</span>
-              <h2>Un service pensé pour rassurer avant, pendant et après la réservation.</h2>
-              <p>Ekymoov cherche à rendre l’expérience plus prévisible, plus humaine et plus simple à utiliser au quotidien.</p>
-            </div>
-
-            <div class="trust-grid">
-              <article class="trust-card reveal">
-                <h3>Une expérience pensée PMR</h3>
-                <p>Le parcours met l’accent sur la lisibilité, la simplicité d’action et l’anticipation du trajet.</p>
-              </article>
-              <article class="trust-card reveal">
-                <h3>Des chauffeurs sensibilisés</h3>
-                <p>Le service vise une mise en relation avec des chauffeurs mieux préparés aux besoins des utilisateurs PMR.</p>
-              </article>
-              <article class="trust-card reveal">
-                <h3>Plus de visibilité avant le départ</h3>
-                <p>La réservation doit permettre de vérifier plus clairement la disponibilité et les conditions du trajet.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="section ecosystem-section" id="partners">
-            <div class="section-heading reveal">
-              <span class="eyebrow">Partenaires &amp; Presse</span>
+          <section class="section" id="partners">
+            <div class="section-heading center" style="margin-left: auto; margin-right: auto;">
+              <span class="eyebrow">Partenaires &amp; presse</span>
               <h2>Ceux qui s'engagent et parlent d'Ekymoov.</h2>
-              <p>
-                <span class="mobile-text-desktop">Nos collaborateurs et les médias qui relaient notre mission vers une mobilité plus inclusive, plus digne et plus accessible.</span>
-                <span class="mobile-text-short">Nos partenaires et la presse qui soutiennent notre vision.</span>
-              </p>
             </div>
 
-            <div class="ecosystem-partners reveal">
-              <div class="ecosystem-sub-header">
-                <span class="ecosystem-sub-pill">Nos partenaires</span>
-              </div>
-              <div class="partners-list">
-                <article class="partner-card">
-                  <div class="partner-card-header">
-                    <div class="partner-logo-wrap">
-                      <img src="cpm_logo.jpg" alt="Logo CPM" class="partner-logo" loading="lazy" decoding="async" />
-                    </div>
-                    <div class="partner-meta">
-                      <h3>CPM</h3>
-                      <p>Partenaire d'Ekymoov dans le développement d'une mobilité adaptée et inclusive, CPM partage l'ambition d'un service de transport plus humain et plus accessible pour les personnes à mobilité réduite.</p>
-                    </div>
-                  </div>
-                  <div class="partner-video-label">
-                    <span class="eyebrow">Interview</span>
-                    <p>Découvrez l'interview entre le dirigeant d'Ekymoov et CPM autour de leur vision commune de la mobilité inclusive.</p>
-                  </div>
-                  <div class="partner-video-wrap">
-                    <iframe
-                      src="https://www.youtube.com/embed/8oOj4p0R4gs"
-                      title="Interview Ekymoov x CPM – Partenariat mobilité inclusive"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                      loading="lazy"
-                    ></iframe>
-                  </div>
-                </article>
-              </div>
-            </div>
+            <div class="editorial-grid">
+              <article class="editorial-feature reveal">
+                <span class="editorial-kicker">Interview</span>
+                <h3>Ekymoov x CPM</h3>
+                <p>Le dirigeant d'Ekymoov et CPM autour de leur vision commune de la mobilité inclusive.</p>
+                <div class="editorial-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/8oOj4p0R4gs"
+                    title="Interview Ekymoov x CPM – Partenariat mobilité inclusive"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </article>
 
-            <div class="ecosystem-press reveal">
-              <div class="ecosystem-sub-header">
-                <span class="ecosystem-sub-pill ecosystem-sub-pill--press">Ils parlent de nous</span>
-              </div>
-              <div class="press-cards">
+              <div class="press-column reveal">
                 <a
                   class="press-card"
                   href="https://www.iledefrance.fr/toutes-les-actualites/ekymoov-lappli-de-transport-adapte-aux-personnes-mobilite-reduite"
@@ -349,77 +290,46 @@
                   rel="noopener noreferrer"
                   aria-label="Lire l'article de la Région Île-de-France sur Ekymoov"
                 >
-                  <div class="press-card-logo-wrap">
-                    <img src="OIP (5).webp" alt="Région Île-de-France" class="press-card-logo" loading="lazy" decoding="async" />
-                  </div>
-                  <div class="press-card-body">
-                    <strong>Région Île-de-France</strong>
-                    <p>Ekymoov mis à l'honneur par la Région Île-de-France via son incubateur Perqo, pour son approche innovante du transport adapté PMR.</p>
-                    <span class="press-card-cta">
-                      Lire l'article
-                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-                    </span>
-                  </div>
+                  <img src="OIP (5).webp" alt="" class="press-card-logo" loading="lazy" decoding="async" />
+                  <strong>Région Île-de-France</strong>
+                  <p>Ekymoov mis à l'honneur par la Région via son incubateur Perqo, pour son approche innovante du transport adapté PMR.</p>
+                  <span class="press-card-cta">
+                    Lire l'article
+                    <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                  </span>
                 </a>
+
+                <div class="press-card">
+                  <img src="cpm_logo.jpg" alt="" class="press-card-logo" loading="lazy" decoding="async" />
+                  <strong>CPM, partenaire RSE</strong>
+                  <p>Partenaire d'Ekymoov dans le développement d'une mobilité adaptée et inclusive.</p>
+                </div>
               </div>
             </div>
           </section>
 
-          <section class="section value-section" id="mission">
-            <div class="value-copy reveal">
-              <span class="eyebrow">Notre mission</span>
-              <h2>Construire une mobilité plus inclusive, plus digne et plus accessible.</h2>
-              <p>
-                <span class="mobile-text-desktop">
-                  Ekymoov ne cherche pas seulement à digitaliser un trajet. L’objectif est de redonner de la fluidité,
-                  de la visibilité et davantage d’autonomie à des déplacements encore trop souvent compliqués.
-                </span>
-                <span class="mobile-text-short">Notre objectif: rendre les déplacements plus fluides, visibles et plus autonomes.</span>
-              </p>
-
-              <div class="value-list">
-                <div class="value-item reveal">
-                  <span class="value-check" aria-hidden="true">&#10003;</span>
-                  <p>Rendre les déplacements plus simples pour les personnes à mobilité réduite.</p>
-                </div>
-                <div class="value-item reveal">
-                  <span class="value-check" aria-hidden="true">&#10003;</span>
-                  <p>Créer un service mobile utile, humain et fiable au quotidien.</p>
-                </div>
-                <div class="value-item reveal">
-                  <span class="value-check" aria-hidden="true">&#10003;</span>
-                  <p>Réunir utilisateurs, chauffeurs et partenaires autour d’une mobilité plus inclusive.</p>
-                </div>
+          <section class="section" id="cta">
+            <div class="final-cta reveal">
+              <div class="final-cta-panel">
+                <span class="eyebrow">Vous êtes concerné</span>
+                <h3>Passager, aidant ou établissement</h3>
+                <p>Demandez un accès à l'application passager.</p>
+                <a class="button button-primary" href="passager.html">Découvrir l'espace passager</a>
               </div>
-            </div>
-
-            <aside class="value-panel reveal">
-              <div class="media-card mission-image">
-                <img
-                  id="mission-img"
-                  src="inclusive-city-mobility.jpg.png"
-                  alt="Mobilité inclusive dans un environnement urbain"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div class="final-cta-panel on-dark">
+                <span class="eyebrow">Vous conduisez</span>
+                <h3>Chauffeur VTC ou transporteur</h3>
+                <p>Découvrez comment fonctionnent les courses PMR côté chauffeur.</p>
+                <a class="button button-primary" href="chauffeur.html">Découvrir l'espace chauffeur</a>
               </div>
-              <div class="value-stat"><span>Vision produit</span><strong>Une app utile, accessible et simple à utiliser</strong></div>
-              <div class="value-stat"><span>Impact</span><strong>Réduire la difficulté d’accès au transport adapté</strong></div>
-              <div class="value-stat"><span>Communauté</span><strong>Utilisateurs, chauffeurs et partenaires engagés</strong></div>
-            </aside>
-          </section>
-
-          <section class="section cta-section reveal" id="cta">
-            <div class="cta-copy">
-              <span class="eyebrow">Demander un accès</span>
-              <h2>Parlez-nous de votre besoin et nous revenons vers vous.</h2>
-              <p>
-                Que vous soyez utilisateur, proche, structure médico-sociale ou partenaire, vous pouvez nous envoyer une demande
-                d’accès ou de contact en quelques informations.
-              </p>
             </div>
 
             <form class="request-form" data-request-form>
+              <div class="section-heading center" style="margin: 0 auto 8px;">
+                <h2 style="font-size: clamp(1.5rem, 2.6vw, 2rem);">Parlez-nous de votre besoin</h2>
+                <p style="margin-top: 8px;">La plateforme est en phase pilote, coordonnée manuellement par notre équipe&nbsp;: nous revenons vers vous personnellement.</p>
+              </div>
+
               <div class="form-grid">
                 <label class="form-field">
                   <span>Nom</span>
@@ -478,34 +388,38 @@
         <footer class="footer" id="contact">
           <div class="footer-main">
             <div class="footer-brand-block">
-              <a class="brand footer-brand" href="#hero">
-                <span class="brand-lockup">
-                  <img class="brand-logo-image" src="d5a42f39-15db-4476-a462-4675fbff2598.png" alt="Ekymoov" loading="lazy" decoding="async" />
-                </span>
+              <a class="brand" href="#hero">
+                <img class="brand-logo-image" src="ekymoov-logo.png" alt="" />
+                <span class="brand-word">Ekymoov</span>
               </a>
-              <p class="footer-copy">
-                <span class="mobile-text-desktop">L’application mobile pensée pour une mobilité plus accessible, plus claire et plus digne.</span>
-                <span class="mobile-text-short">Une mobilité plus accessible, plus claire et plus digne.</span>
-              </p>
+              <p class="footer-copy">Le transport adapté pour les personnes à mobilité réduite, leurs proches et les établissements médico-sociaux, en Île-de-France.</p>
               <div class="footer-pillars">
-                <span>Mobilité inclusive</span>
-                <span>Service humain</span>
-                <span>Expérience rassurante</span>
+                <span>Passager</span>
+                <span>Chauffeur</span>
+                <span>Établissement</span>
               </div>
             </div>
 
-            <div class="footer-column">
+            <div>
               <span class="footer-heading">Navigation</span>
               <nav class="footer-links" aria-label="Liens du pied de page">
                 <a href="#problem">Constat</a>
-                <a href="#solution">Solution</a>
-                <a href="#how-it-works">Parcours</a>
-                <a href="#trust">Confiance</a>
-                <a href="#partners">Partenaires</a>
+                <a href="passager.html">Passager</a>
+                <a href="chauffeur.html">Chauffeur</a>
+                <a href="etablissement.html">Établissement</a>
               </nav>
             </div>
 
-            <div class="footer-column">
+            <div>
+              <span class="footer-heading">Ekymoov</span>
+              <nav class="footer-links" aria-label="Liens Ekymoov">
+                <a href="#trust">Confiance</a>
+                <a href="#partners">Partenaires</a>
+                <a href="#cta">Demander un accès</a>
+              </nav>
+            </div>
+
+            <div>
               <span class="footer-heading">Contact</span>
               <nav class="footer-links" aria-label="Liens légaux">
                 <a href="mailto:contact@ekymoov.com">contact@ekymoov.com</a>
@@ -514,35 +428,11 @@
                 <a href="#cookie-banner" data-cookie-manage>Cookies</a>
               </nav>
             </div>
-
-            <div class="footer-column footer-commitment">
-              <span class="footer-heading">Notre engagement</span>
-              <p>
-                Construire un service plus fiable, plus digne et plus accessible pour les personnes à mobilité réduite,
-                avec une approche claire, humaine et professionnelle.
-              </p>
-              <a class="button button-primary footer-button" href="#cta">Demander un accès</a>
-            </div>
           </div>
 
           <div class="footer-bottom">
-            <p>Ekymoov - Une mobilité plus accessible, pensée avec exigence et engagement.</p>
+            <p>Ekymoov — Transport adapté PMR pour passagers, chauffeurs et établissements médico-sociaux.</p>
             <a href="#hero">Retour en haut</a>
-          </div>
-
-          <div class="footer-mobile">
-            <a class="brand footer-brand" href="#hero">
-              <span class="brand-lockup">
-                <img class="brand-logo-image" src="d5a42f39-15db-4476-a462-4675fbff2598.png" alt="Ekymoov" loading="lazy" decoding="async" />
-              </span>
-            </a>
-            <p class="footer-mobile-copy">Une mobilité plus accessible, plus claire et plus digne.</p>
-            <div class="footer-mobile-links">
-              <a href="mailto:contact@ekymoov.com">Contact</a>
-              <a href="mentions-legales.html">Mentions légales</a>
-              <a href="#privacy-modal" data-modal-open="privacy-modal">Confidentialité</a>
-              <a href="#cookie-banner" data-cookie-manage>Cookies</a>
-            </div>
           </div>
         </footer>
       </div>
@@ -568,9 +458,6 @@
               <p>
                 Le responsable du traitement est Ekymoov. Pour toute question relative à la confidentialité ou à l'exercice de vos droits,
                 vous pouvez contacter l'équipe à l'adresse : <a href="mailto:contact@ekymoov.com">contact@ekymoov.com</a>.
-              </p>
-              <p>
-                À compléter si besoin : adresse postale de la société, numéro d'immatriculation, nom du représentant légal et coordonnées du DPO.
               </p>
               <p>
                 Les informations d'identification de l'éditeur et de l'hébergeur peuvent être consultées sur la page
@@ -616,9 +503,7 @@
                 Les données sont accessibles uniquement aux personnes habilitées chez Ekymoov et, si nécessaire, à ses sous-traitants techniques,
                 prestataires d'hébergement, outils de communication ou partenaires opérationnels, dans la limite de leurs missions.
               </p>
-              <p>
-                Les données ne sont pas vendues. Tout partage doit être justifié, encadré contractuellement et limité à ce qui est nécessaire.
-              </p>
+              <p>Les données ne sont pas vendues. Tout partage doit être justifié, encadré contractuellement et limité à ce qui est nécessaire.</p>
             </section>
 
             <section class="policy-card">
